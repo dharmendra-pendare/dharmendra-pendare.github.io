@@ -2,164 +2,279 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Civilion - Dharmendra</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Dharmedra Pendare</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
-    <div class="spinner-container">
-      <div class="circles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
       </div>
-    </div>
-      <header class="header">
-        <div class="img-wrapper">
-          <img src="images/civil_engg.png" />
-        
-        <div class="banner"> 
-          <h1>Hi, I'm Dharmendra,</h1>
-          <p>I'm a Civil Engineer, Sub Contractor, Project Managment.</p>
-        </div>
-        </div>
-      </header>
-      <section class="about-us">
-        <div class="section-header">
-          <h6 class="section-heading">About me</h6>
-          <div class="underline"></div>
-        </div>
-        <div class="services">
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-pen-nib"></i>
-              <h3>Interior</h3>
-            </div>
-            <p class="service-text">
-             During my experience with interior projects, learned how crucial it is to blend functionality with aesthetics. Working alongside architects and designers, involved in designing layouts that optimize space while ensuring safety and compliance with building codes. Rewarding to see how thoughtful interior construction can transform a space, making it both visually appealing and highly functional.
-            </p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-paint-roller"></i>
-              <h3>Exterior</h3>
-            </div>
-            <p class="service-text">
-            In my experience with exterior design, I’ve focused on creating functional and visually appealing facades. This involves selecting durable materials, ensuring weather resistance, and integrating features like insulation and drainage for long-term performance. Every decision aims to enhance both aesthetics and sustainability.
-            </p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-pencil-alt"></i>
-              <h3>Design</h3>
-            </div>
-            <p class="service-text">
-            In design, I focus on blending creativity with functionality, ensuring spaces are both visually appealing and practical while prioritizing durability and user needs.
-            </p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-paint-brush"></i>
-              <h3>Decoration</h3>
-            </div>
-            <p class="service-text">
-              In decoration, I focus on enhancing a space’s aesthetic by carefully selecting colors, furnishings, and accessories that complement the design while creating a welcoming and stylish environment.
-            </p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-ruler-combined"></i>
-              <h3>Planning</h3>
-            </div>
-            <p class="service-text">
-            In planning, I focus on organizing and coordinating every aspect of a project, ensuring that resources, timelines, and designs align to meet goals efficiently and effectively.
-            </p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="far fa-building"></i>
-              <h3>Execution</h3>
-            </div>
-            <p class="service-text">
-            In execution, I focus on turning plans into reality, overseeing the construction or implementation process, ensuring that designs are followed accurately, and maintaining quality, safety, and timelines throughout the project.
-            </p>
-          </div>
-          <div class="about-us-img-wrapper">
-            <img src="images/engg.webp" />
-          </div>
-        </div>
-      </section>
-      <section class="team">
-        <div class="section-header">
-          <h1 class="section-heading">Our Team</h1>
-          <div class="underline"></div>
-        </div>
-        
-        <div class="cards-wrapper">
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/p13.jpg" alt="CEO" />
-            </div>
-            <div class="card-info">
-              <h2>Dharmendra</h2>
-              <h3>Project Incharge</h3>
-              <p>
-                "Civil Engineer, Project Managment at Shrinath Infa Projects"
-              </p>
-              <a style="text-decoration: none; color: #08088f"href="#"><i class="fa fa-linkedin" style="font-size:24px;color:#08088f"></i></a>
-            </div>
-          </div>
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/person-1.jpg" alt="Designer" />
-            </div>
-            <div class="card-info">
-              <h2>Ann Brown</h2>
-              <h3>Designer</h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
-              </p>
-              <a style="text-decoration: none; color: #08088f"href="#"><i class="fa fa-linkedin" style="font-size:24px;color:#08088f"></i></a>
-            </div>
-          </div>
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/person-1.jpg" alt="Architect" />
-            </div>
-            <div class="card-info">
-              <h2>Mary Doe</h2>
-              <h3>Architect</h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, impedit!"
-              </p>
-              <a style="text-decoration: none; color: #08088f"href="#"><i class="fa fa-linkedin" style="font-size:24px;color:#08088f"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
+    </nav>
+    <!-- navbar ends here -->
 
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Dharmendra Pendare</span>
+          </h2>
+          <p class="text-muted">
+            I'm a Civil Engineer, Sub Contractor, Project Managment.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/p13-remove.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
 
-    <p class="paragraph1">
-      Here are some project I have done and still counting on...
-    </p>
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Civil Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/runway.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+              <img
+                src="images/runway (1).png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Airplane Runway</h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum neces aibus minima veniam.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/railway-station.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+              <img
+                src="images/building.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Railway Platforms and Buildings</h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum neces aibus minima veniam.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/road.png"
+                class="w-25 img-fluid img"
+                alt=""/>
+                <img
+                src="images/canal.png"
+                class="w-25 img-fluid img"
+                alt=""/>
+            </div>
+            <div class="content mt-3">
+              <h4>Road and Canals Construction</h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum neces aibus minima veniam.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Survey & Project Managment</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Leveling and Measurement</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Supervising</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+              Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
+              aliquid exrea commodi consequatur magni dolores aos qui ratione
+              voluptatem nesciunt.
+            </p>
+            <p class="text-muted">
+              Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
+              consequntar magni dolores.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="Entry Level Web Developer Resume.pdf"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+<!-- project card  -->
+
 <div class="projcard-container">
   <div class="projcard projcard-blue">
     <div class="projcard-innerbox">
@@ -169,9 +284,7 @@
         <div class="projcard-subtitle">IRCTC, The Western Railway (WR) of India <br> (Railway plaform infrastructure)</div>
         <div class="projcard-bar"></div>
         <div class="projcard-description">
-         I worked at IRCTC Western Railway (WR) of India at Khandwa Platform No. 6, where I was responsible for overseeing construction activities. My role involved managing all measurements related to the construction, ensuring accuracy and compliance with project specifications.
-         I efficiently handled the procurement and management of required materials, monitored budgets, and coordinated resources to maintain cost-effectiveness.
-         Additionally, I supervised day-to-day operations to ensure timely project completion while maintaining quality standards.
+        As a Construction Lead at IRCTC Western Railway (WR), Khandwa Platform No. 6, I managed construction activities, including measurements, material procurement, budget monitoring, and resource coordination. Ensured timely project completion, quality standards, and cost-effectiveness.
       </div>
         <div class="projcard-tagbox">
           <span class="projcard-tag">Platform</span>
@@ -225,16 +338,7 @@
         <div class="projcard-title">MPRDC</div>
         <div class="projcard-subtitle">Madhya Pradesh Road Development Corporation Ltd (MPRDC), <br>(Govt. of MP Undertaking)</div>
         <div class="projcard-bar"></div>
-        <div class="projcard-description">
-           I worked as a Site Manager/Engineer with Madhya Pradesh Road Development Corporation Ltd (MPRDC), where I oversaw on-site construction activities for road development projects. My responsibilities included site supervision, project planning, resource and labor management, quality control, and ensuring timely project completion within budget.
-          These are my area of tasks - 
-          1. Site Supervision
-          2. Project Planning & Execution
-          3. Resource Management
-          4. Quality Control
-          5. Labor Management
-          6. Reporting & Documentation
-          7. Cost & Budget Management
+        <div class="projcard-description"> I worked as a Site Manager/Engineer with Madhya Pradesh Road Development Corporation Ltd (MPRDC), where I oversaw on-site construction activities for road development projects. My responsibilities included site supervision, project planning, resource and labor management, quality control, Execution, Resource Management,Reporting & Documentation and ensuring timely project completion within cost & budget.
       </div>
         <div class="projcard-tagbox">
           <span class="projcard-tag">Roads</span>
@@ -245,54 +349,533 @@
     </div>
   </div>
 </div>
-    </div>
-<section id="footer-con">
-<footer class="custom-footer">
-    <div class="footer-container">
-        <div class="footer-row">
-              <div class="footer-contact">
-                <h5>Contact Me</h5>
-                <form class="contact-form" method="POST" id="contactForm">
-                    <input type="name" class="form-input" id="name" placeholder="Enter name">
-                    <input type="email" class="form-input" id = "email" placeholder="Enter email">
-                    <textarea class="form-textarea" id="message" placeholder="Message"></textarea>
-                    <button type="button" class="form-button">Send</button>
-                </form>
-              </div>          
-            <div class="footer-section">
-              <br>
-                <h5><i class="fa fa-road"></i> CO INC</h5>
-                <div class="footer-links">
-                    <div class="link-column">
-                        <ul class="link-list">
-                            <li><a href="">Product</a></li>
-                            <li><a href="">Benefits</a></li>
-                            <li><a href="">Partners</a></li>
-                            <li><a href="">Team</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-column">
-                        <ul class="link-list">
-                            <li><a href="">Documentation</a></li>
-                            <li><a href="">Support</a></li>
-                            <li><a href="">Legal Terms</a></li>
-                            <li><a href="">About</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <p>Copyright 2025 @ Dharmendra - All Rights are reserved</p>
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
+ 
+<!-- end project cards -->
+
 </section>
-    <script src="script.js"></script>
+    <!-- portfolio section ends here -->
+
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Clients Feedback</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Develop leadership skills to manage teams effectively, especially if you aim for roles like project manager or site engineer....
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Strengthen your analytical and problem-solving skills to tackle unexpected challenges during construction or design phases.
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                        consecteaur aeci velit, sed quia non numquam eius modi
+                        tempora incidunt ut lao magnam aliquam quaerat ...
+                      </p>
+                      <h4>Kevin Andrew</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/jabalpur.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Dharmendra Pendare</small
+              ><span class="ms-3">Jan 8,2025</span>
+              <h4 class="card-title">
+                <a href="">Jabalpur Airport - Airports Authority of India</a>
+              </h4>
+              <p class="text-muted">
+              I am working as an In-Charge at Jabalpur Dumna Airport (Airports Authority of India), where I am managing the construction work of the airplane runway. In this role, I oversee the entire construction process, ensuring that the work meets safety, quality, and regulatory standards. I am responsible for supervising site activities, managing teams, and ensuring the timely and cost-effective completion of the project.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/railway-con.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Dharmendra Pendare</small
+              ><span class="ms-3">Jan 8,2025</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                I worked at IRCTC Western Railway (WR) of India at Khandwa Platform No. 6, where I was responsible for overseeing construction activities. My role involved managing all measurements related to the construction, ensuring accuracy and compliance with project specifications.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/canals.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Dharmendra Pendare</small
+              ><span class="ms-3">Jan 8,2025</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/2048game.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Dharmendra Pendare</small
+                    ><span class="text-muted ms-2">Jan 8,2025</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/currency-converter.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Dharmendra Pendare</small
+                    ><span class="text-muted ms-2 ms-md-0">Jan 8,2025</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/dictionary.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Dharmendra Pendare</small
+                    ><span class="text-muted ms-2 ms-md-0">Jan 8,2025</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Khandwa, India</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 8889606776</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>dharm.pendare@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>dharmendra-pendare.github.io</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-behance"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2025 Dharmendra Pendare | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
     <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="tilt.js"></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
   </body>
 </html>
